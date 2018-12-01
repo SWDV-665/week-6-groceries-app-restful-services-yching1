@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar transparent>
+   <ion-title>Add Grocery </ion-title>
+   <ion-buttons end>
+     <button ion-button icon-only (click)="close()"><ion-icon name="close"></ion-icon></button>
+   </ion-buttons>
+  </ion-toolbar>
+ </ion-header>
+  
+ <ion-content>
+  
+   <ion-list no-lines>
+  
+     <ion-item>
+       <ion-label floating>Enter Item</ion-label>
+       <ion-input [(ngModel)]="Item" type="text"></ion-input>
+     </ion-item>
+  
+     <ion-item>
+       <ion-label floating>Quantity</ion-label>
+       <ion-textarea [(ngModel)]="Quantity"></ion-textarea>
+     </ion-item>
+  
+     
+  
+   </ion-list>
+  
+   <button ion-button full color="secondary" (click)="save()">Save</button>
+  
+ </ion-content>
